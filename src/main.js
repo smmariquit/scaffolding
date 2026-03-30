@@ -15,8 +15,8 @@ let sectionNodes = [];
 let navButtons = [];
 let sceneManager = null;
 
-function parsePagesFromTranscript(rawTranscript) {
-  return rawTranscript
+function parsePages(rawText) {
+  return rawText
     .split("=== PAGE ")
     .slice(1)
     .map((pageChunk) => {
@@ -34,7 +34,7 @@ function parsePagesFromTranscript(rawTranscript) {
     });
 }
 
-function buildChaptersFromTranscript(pages) {
+function buildPages(pages) {
   return pages.map((page, index) => {
     const pageNumber = page.pageNumber ?? index + 1;
     const pageLabel = String(pageNumber).padStart(2, "0");
@@ -43,7 +43,7 @@ function buildChaptersFromTranscript(pages) {
       kicker: `Page ${pageLabel}`,
       navLabel: `Page ${pageLabel}`,
       heading: `Page ${pageLabel}`,
-      body: page.text || "No extractable text on this page.",
+      body: page.text || "No text on this page.",
       scene: sceneCycle[index % sceneCycle.length],
       interactionHint: "Scroll to continue in exact order.",
       meta: "Story sequence"
@@ -87,13 +87,13 @@ function renderStory(nextChapters) {
   return chapters[0]?.id ?? null;
 }
 
-async function loadTranscriptChapters() {
+async function loadPages() {
   const response = await fetch("/assets/pdf-manuscript.txt");
   if (!response.ok) throw new Error(`Failed to load content (${response.status})`);
 
-  const transcript = await response.text();
-  const pages = parsePagesFromTranscript(transcript).filter((page) => page.pageNumber !== null || page.text.length > 0);
-  return buildChaptersFromTranscript(pages);
+  const text = await response.text();
+  const pages = parsePages(text).filter((page) => page.pageNumber !== null || page.text.length > 0);
+  return buildPages(pages);
 }
 
 const lenis = new Lenis({
@@ -171,13 +171,13 @@ motionToggle.addEventListener("click", () => {
 
 async function init() {
   try {
-    const transcriptChapters = await loadTranscriptChapters();
-    const firstChapterId = renderStory(transcriptChapters);
+    const pages = await loadPages();
+    const firstChapterId = renderStory(pages);
 
     sceneManager = createSceneManager({
       canvas: document.querySelector("#gl-canvas"),
       reducedMotion,
-      chapters: transcriptChapters.map((chapter) => ({ id: chapter.id, scene: chapter.scene }))
+      chapters: pages.map((chapter) => ({ id: chapter.id, scene: chapter.scene }))
     });
 
     setActiveChapter(firstChapterId);
