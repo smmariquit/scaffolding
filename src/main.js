@@ -23,6 +23,13 @@ function normalizeInlineMarkdown(text) {
     .trim();
 }
 
+function stripWrappingQuotes(text) {
+  const trimmed = String(text ?? "").trim();
+  const match = trimmed.match(/^["“](.+)["”]$/);
+  if (!match) return trimmed;
+  return match[1].trim();
+}
+
 function splitHeadingByColon(text) {
   const separatorIndex = text.indexOf(":");
   if (separatorIndex === -1) {
@@ -128,7 +135,7 @@ function parseStoryMarkdown(rawText) {
 
     if (isEmphasizedLeadQuote || isWrappedInQuotes) {
       flushParagraph();
-      nodes.push({ type: "quote", text: maybeQuote, partSlug, sectionSlug });
+      nodes.push({ type: "quote", text: stripWrappingQuotes(maybeQuote), partSlug, sectionSlug });
       continue;
     }
 

@@ -198,7 +198,7 @@ h1 {
 }
 
 .part-title {
-  margin: 1.35rem 0 0.2rem;
+  margin: 1.35rem 0 0.5rem;
   padding: 0.28rem 0 0.08rem;
   border-top: 1px solid var(--line);
   font-family: "Libre Baskerville", serif;
@@ -208,6 +208,7 @@ h1 {
   line-height: 1.14;
   color: color-mix(in srgb, var(--accent-hot) 62%, var(--ink) 38%);
   text-transform: none;
+  text-wrap: balance;
 }
 
 .part-title .heading-lead,
@@ -219,20 +220,20 @@ h1 {
 
 .part-title .heading-lead {
   letter-spacing: 0.02em;
-  margin-right: 0.22em;
+  margin-right: 0;
   color: inherit;
 }
 
 .part-title .heading-colon {
   color: inherit;
-  margin-right: 0.26em;
+  margin: 0 0.2em 0 0;
 }
 
 .part-title .heading-tail {
   color: inherit;
-  font-size: 0.84em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 0.004em;
+  letter-spacing: 0.002em;
   text-transform: none;
 }
 
@@ -243,7 +244,7 @@ h1 {
 }
 
 .section-title {
-  margin: 0.2rem 0 0.24rem;
+  margin: 0.12rem 0 0.24rem;
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
   letter-spacing: 0.002em;
