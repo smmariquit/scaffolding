@@ -1,0 +1,161 @@
+===== PAGE 1 =====
+Scaffolding
+How Minecraft built
+the person I became
+UHF
+83
+70
+30
+60
+50
+VHE
+SILVERCROWN
+
+===== PAGE 2 =====
+I. The Foundation: A computer and a dream
+My introduction to the Internet
+It would be an understatement to say that I had been really online from a young age.
+By five years old, I had already been playing around with computers. By six, I knew how to insert a floppy disk
+into a computer. By ten, I was modding Minecraft. By twelve, tricking my friend with a fake Facebook website to
+get his password and pull a prank.
+Like a typical child who had very early unsupervised computer access, I really liked games. My parents were
+really rooting for me to become a smart, successful person. They installed this educational game called
+natural way with numbers.
+Adventure
+Kindergarten
+Original Best-SellingClassic Version
+usual games like Jetpack Joyride, Temple Runner, Candy Crush, and Minecraft (which we'll get to later!), I also
+tutorials on Android hacking.
+Here, I would learn my first programming language.
+Learning to code
+My entry into programming wasn't high-end. It started with Batch scripts. They were clunky, primitive lines of
+code. Any seasoned programmer wouldn't seriously use this for a game. However, for a kid like me, the
+games actually executed
+
+===== PAGE 3 =====
+copyright(e)1981,
+Inc.
+Inc.
+Revision 8B 7
+Serialnumber840726
+Nestof
+House
+You are
+Btanding
+in an openfield westof a whitehouse,
+witha
+boarded frant
+There
+mailbox
+nere
+meilbox
+ibox
+butuodo
+Bma11
+leaflet
+>take
+the
+leaflet
+Taken.
+>read leaflet
+WELCOME
+TO
+ZORKI
+is
+agameofadventure,
+danger..
+and low
+ZORK
+cunningIn it
+you will
+explore
+the most
+amozing
+territory
+mortals.No
+Bome of
+seen by
+over
+computer
+should be
+without
+onei.
+to control a player. After searching for more avenues to let out my creative itch, I ended up following a Java
+tutorial for ten days straight. I was hooked. I was barely coming away from my computer. I knew I had to make
+this game.
+Let's Build a
+LsBuldaCan
+ub11
+able
+er-iatVersionUrD=155069189782347181BL;
+HEIGHT-WIDTH/12*9
+d thread:
+- false
+publiestatiebooleanpaused
+-false;
+public int
+publfie int highscore;
+1/e-normal
+LEAMEL
+andler
+ublle
+STATE
+Conel
+CNGMAOEHPLO
+g: Let's Bulld a Game #15
+Tanky. The objective was simple: protect the core. I uploaded this on itch.io, a game publishing site, and got a
+small bit of traction.
+
+===== PAGE 4 =====
+Tanky
+Enraging! (but Funt)
+right? Hot until
+regular,fast,and small ones!
+100 Health!
+Install instructions
+you HEED to have the Jau
+latestversion)toplay this gan
+Download
+Downioad
+Publishing a game was like giving a piece of myself on the Internet. I didn't know at the time that I would do
+way more of that.
+Minecraft
+Minecraft is a sandbox game where you can create whatever you want and do whatever you like. As a kid, this
+concept immediately appealed to me. I started out on Pocket Edition, hunched over a small smartphone
+screen, but eventually, I made the jump to playing on my computer. That transition changed everything.
+Remember how I learned how to program in Java? The thing is Minecraft was also programmed in Java. This
+way, I knew how to make modifications to the game. This game became my avenue to create everything I
+wanted to.
+In Minecraft, there are these things called servers, kind of like virtual rooms people could host to let many
+players play on the same world at the same time.
+At the time, I was playing on a Dutch server called NLGVNL. Even though I didn't speak the language, I was
+obsessed with how the server worked. I saw the "scaffolding" behind the curtain like the plugins, the
+permissions, and how the server was administered.
+One day, I was asked to contribute to a server's development. That was the moment the veil lifted. I realized a
+server wasn't just a map. It was an intricate machine that needed a dutiful architect to take care over it..
+This would eventually lead to me making my own server.
+II. The Build: The making of HearthCraft
+The Piso Net
+In 2018, I decided to build my own world: HearthCraft. The timing was terrible. My laptop was broken, so I was
+stuck coding Java on my phone and walking to the neighborhood "piso net" to push updates. I would sit in
+
+===== PAGE 5 =====
+those cramped, coin-operated internet booths and debug a global server while the timer ticked down on my
+coins.
+Then there was the money. Servers cost money, and as a teenager in the Philippines, international payments
+were a nightmare. I had to make my parents sign consent forms just so I could use PayMaya and GCash to
+keep the hosting alive. I was basically running a global startup before I was old enough to own a credit card.
+For
+Eventually, the server got traction. The player count grew over time. Then the pandemic struck.
+This led to me making a Minecraft server named HearthCraft in 2018.
+At the time, my laptop was broken, so I needed to code on my phone and use my neighborhood's piso net
+Servers cost money. I also didn't have a way to make international payments so I had to make my parents sign
+a consent form for me to be able to use PayMaya and GCash.
+Eventually, my server got traction. The player count grew over time. Then, the pandemic struck.
+they played Minecraft in, it was a place they called home.
+I maintained this through college. It became my source of income. As I went further into college, I realized I
+couldn't really keep this up. I shut down the server in April 2025.
+I.After that
+I focused in my career in software engineering. I liked teaching, and I get invited to speak sometimes to give
+insight on my field. I still talk about my Minecraft career, what I learned from it. Minecraft taught me three
+things.

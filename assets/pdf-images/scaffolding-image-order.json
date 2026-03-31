@@ -1,0 +1,331 @@
+{
+  "sourcePdf": "Scaffolding.pdf",
+  "imageCount": 16,
+  "markerCount": 15,
+  "images": [
+    {
+      "order": 1,
+      "page": 1,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-01-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-01-image-01.png"
+    },
+    {
+      "order": 2,
+      "page": 2,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-02-image-01.jpeg",
+      "relativePath": "/assets/pdf-images/scaffolding-page-02-image-01.jpeg"
+    },
+    {
+      "order": 3,
+      "page": 3,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-03-image-01.jpeg",
+      "relativePath": "/assets/pdf-images/scaffolding-page-03-image-01.jpeg"
+    },
+    {
+      "order": 4,
+      "page": 3,
+      "indexOnPage": 2,
+      "file": "scaffolding-page-03-image-02.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-03-image-02.png"
+    },
+    {
+      "order": 5,
+      "page": 4,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-04-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-04-image-01.png"
+    },
+    {
+      "order": 6,
+      "page": 4,
+      "indexOnPage": 2,
+      "file": "scaffolding-page-04-image-02.jpeg",
+      "relativePath": "/assets/pdf-images/scaffolding-page-04-image-02.jpeg"
+    },
+    {
+      "order": 7,
+      "page": 5,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-05-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-05-image-01.png"
+    },
+    {
+      "order": 8,
+      "page": 6,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-06-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-06-image-01.png"
+    },
+    {
+      "order": 9,
+      "page": 7,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-07-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-07-image-01.png"
+    },
+    {
+      "order": 10,
+      "page": 8,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-08-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-08-image-01.png"
+    },
+    {
+      "order": 11,
+      "page": 8,
+      "indexOnPage": 2,
+      "file": "scaffolding-page-08-image-02.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-08-image-02.png"
+    },
+    {
+      "order": 12,
+      "page": 9,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-09-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-09-image-01.png"
+    },
+    {
+      "order": 13,
+      "page": 9,
+      "indexOnPage": 2,
+      "file": "scaffolding-page-09-image-02.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-09-image-02.png"
+    },
+    {
+      "order": 14,
+      "page": 10,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-10-image-01.png",
+      "relativePath": "/assets/pdf-images/scaffolding-page-10-image-01.png"
+    },
+    {
+      "order": 15,
+      "page": 11,
+      "indexOnPage": 1,
+      "file": "scaffolding-page-11-image-01.jpeg",
+      "relativePath": "/assets/pdf-images/scaffolding-page-11-image-01.jpeg"
+    },
+    {
+      "order": 16,
+      "page": 11,
+      "indexOnPage": 2,
+      "file": "scaffolding-page-11-image-02.jpeg",
+      "relativePath": "/assets/pdf-images/scaffolding-page-11-image-02.jpeg"
+    }
+  ],
+  "placements": [
+    {
+      "marker": "image1",
+      "order": 1,
+      "image": {
+        "order": 1,
+        "page": 1,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-01-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-01-image-01.png"
+      },
+      "line": 17,
+      "h2": "The Foundation: A computer and a dream",
+      "h3": "My introduction to the Internet"
+    },
+    {
+      "marker": "image2",
+      "order": 2,
+      "image": {
+        "order": 2,
+        "page": 2,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-02-image-01.jpeg",
+        "relativePath": "/assets/pdf-images/scaffolding-page-02-image-01.jpeg"
+      },
+      "line": 29,
+      "h2": "The Foundation: A computer and a dream",
+      "h3": "Learning to code"
+    },
+    {
+      "marker": "image3",
+      "order": 3,
+      "image": {
+        "order": 3,
+        "page": 3,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-03-image-01.jpeg",
+        "relativePath": "/assets/pdf-images/scaffolding-page-03-image-01.jpeg"
+      },
+      "line": 33,
+      "h2": "The Foundation: A computer and a dream",
+      "h3": "Learning to code"
+    },
+    {
+      "marker": "image4",
+      "order": 4,
+      "image": {
+        "order": 4,
+        "page": 3,
+        "indexOnPage": 2,
+        "file": "scaffolding-page-03-image-02.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-03-image-02.png"
+      },
+      "line": 37,
+      "h2": "The Foundation: A computer and a dream",
+      "h3": "Learning to code"
+    },
+    {
+      "marker": "image5",
+      "order": 5,
+      "image": {
+        "order": 5,
+        "page": 4,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-04-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-04-image-01.png"
+      },
+      "line": 49,
+      "h2": "The Foundation: A computer and a dream",
+      "h3": "Minecraft"
+    },
+    {
+      "marker": "image6",
+      "order": 6,
+      "image": {
+        "order": 6,
+        "page": 4,
+        "indexOnPage": 2,
+        "file": "scaffolding-page-04-image-02.jpeg",
+        "relativePath": "/assets/pdf-images/scaffolding-page-04-image-02.jpeg"
+      },
+      "line": 65,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "The Piso Net"
+    },
+    {
+      "marker": "image7",
+      "order": 7,
+      "image": {
+        "order": 7,
+        "page": 5,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-05-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-05-image-01.png"
+      },
+      "line": 83,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "The Pandemic & Takeoff"
+    },
+    {
+      "marker": "image8",
+      "order": 8,
+      "image": {
+        "order": 8,
+        "page": 6,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-06-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-06-image-01.png"
+      },
+      "line": 91,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "The Pandemic & Takeoff"
+    },
+    {
+      "marker": "image9",
+      "order": 9,
+      "image": {
+        "order": 9,
+        "page": 7,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-07-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-07-image-01.png"
+      },
+      "line": 101,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "Saying Goodbye"
+    },
+    {
+      "marker": "image10",
+      "order": 10,
+      "image": {
+        "order": 10,
+        "page": 8,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-08-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-08-image-01.png"
+      },
+      "line": 105,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "Saying Goodbye"
+    },
+    {
+      "marker": "image11",
+      "order": 11,
+      "image": {
+        "order": 11,
+        "page": 8,
+        "indexOnPage": 2,
+        "file": "scaffolding-page-08-image-02.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-08-image-02.png"
+      },
+      "line": 109,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "Saying Goodbye"
+    },
+    {
+      "marker": "image12",
+      "order": 12,
+      "image": {
+        "order": 12,
+        "page": 9,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-09-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-09-image-01.png"
+      },
+      "line": 117,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "Saying Goodbye"
+    },
+    {
+      "marker": "image13",
+      "order": 13,
+      "image": {
+        "order": 13,
+        "page": 9,
+        "indexOnPage": 2,
+        "file": "scaffolding-page-09-image-02.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-09-image-02.png"
+      },
+      "line": 123,
+      "h2": "The Build: The making of HearthCraft",
+      "h3": "Saying Goodbye"
+    },
+    {
+      "marker": "image14",
+      "order": 14,
+      "image": {
+        "order": 14,
+        "page": 10,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-10-image-01.png",
+        "relativePath": "/assets/pdf-images/scaffolding-page-10-image-01.png"
+      },
+      "line": 138,
+      "h2": "The Finished Structure: After HearthCraft",
+      "h3": "Sharing my Lessons"
+    },
+    {
+      "marker": "image15",
+      "order": 15,
+      "image": {
+        "order": 15,
+        "page": 11,
+        "indexOnPage": 1,
+        "file": "scaffolding-page-11-image-01.jpeg",
+        "relativePath": "/assets/pdf-images/scaffolding-page-11-image-01.jpeg"
+      },
+      "line": 142,
+      "h2": "The Finished Structure: After HearthCraft",
+      "h3": "Forward"
+    }
+  ]
+}

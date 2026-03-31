@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scaffolding</title>
+    <link rel="icon" type="image/png" href="/assets/pdf-images/150px-Floating_Scaffolding_JE4.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="experience-layout">
+      <section class="narrative-pane">
+        <header class="hero">
+          <div class="hero-brand" aria-label="Scaffolding">
+            <img
+              class="brand-logo"
+              src="/assets/pdf-images/150px-Floating_Scaffolding_JE4.png"
+              alt="Floating scaffolding logo"
+              width="150"
+              height="150"
+            />
+            <h1>Scaffolding</h1>
+          </div>
+        </header>
+
+        <main id="story" aria-live="polite"></main>
+      </section>
+
+      <aside class="visual-pane" aria-label="Animation Stage">
+        <canvas id="gl-canvas" aria-hidden="true"></canvas>
+        <div class="crt-shell" aria-hidden="true"></div>
+        <div class="crt-scan" aria-hidden="true"></div>
+        <div class="crt-vignette" aria-hidden="true"></div>
+      </aside>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

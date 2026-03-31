@@ -1,0 +1,60 @@
+{
+  "title": "Scaffolding: How Minecraft built the person I became",
+  "chapters": [
+    {
+      "id": "intro",
+      "kicker": "Chapter 01",
+      "navLabel": "Foundation",
+      "heading": "A Computer And A Dream",
+      "body": "I grew up online early: floppy disks at six, Minecraft modding by ten, and endless phone tinkering through Android tutorials at night. Games were my first laboratory, and each experiment pushed me closer to building instead of only playing.",
+      "quote": "I got hooked on the feeling of creation the moment my games actually executed.",
+      "scene": "IntroScene",
+      "interactionHint": "Tap to burst the first wave of memory fragments.",
+      "meta": "JumpStart, smartphone tinkering, and first coding steps"
+    },
+    {
+      "id": "conflict",
+      "kicker": "Chapter 02",
+      "navLabel": "Build",
+      "heading": "Tanky, Java, And The Grind",
+      "body": "After grueling days of Java tutorials and debugging, I shipped my first game, Tanky, on itch.io. It was small, but publishing it felt like placing a piece of myself on the internet and seeing people respond.",
+      "quote": "I could not walk away until I made something playable.",
+      "scene": "ConflictScene",
+      "interactionHint": "Scroll to increase pressure and shard velocity.",
+      "meta": "First release: Tanky on itch.io"
+    },
+    {
+      "id": "low-point",
+      "kicker": "Chapter 03",
+      "navLabel": "Piso Net",
+      "heading": "Global Server, Local Constraints",
+      "body": "In 2018, I launched HearthCraft under brutal constraints: a broken laptop, Java work on a phone, and update pushes from coin-operated piso net booths while the timer drained. I learned payments, infrastructure, design, moderation, and operations all at once as a teenager.",
+      "quote": "I was running a global startup before I was old enough to own a credit card.",
+      "scene": "LowPointScene",
+      "interactionHint": "Hold to widen the tunnel and let more light through.",
+      "meta": "Philippines, payments, and daily friction"
+    },
+    {
+      "id": "recovery",
+      "kicker": "Chapter 04",
+      "navLabel": "Scale",
+      "heading": "HearthCraft Became Home",
+      "body": "Through the pandemic, HearthCraft became more than a game server. It grew to over 40,000 players, and I shifted from pure developer to community steward, balancing conflict resolution, staff leadership, and nonstop maintenance while studying.",
+      "quote": "The growth was not just a dashboard number; it was people building a home together.",
+      "scene": "RecoveryScene",
+      "interactionHint": "Swipe and watch fragmented parts reassemble into structure.",
+      "meta": "Community growth, emotional labor, and leadership"
+    },
+    {
+      "id": "reflection",
+      "kicker": "Chapter 05",
+      "navLabel": "After",
+      "heading": "Shutdown, Then Signal",
+      "body": "By April 2025, after nearly seven years, I shut HearthCraft down and said goodbye with the community in-game and on Discord. What remained was the permanent structure it built in me: technical depth, entrepreneurship, and a commitment to teach and keep building forward.",
+      "quote": "HearthCraft was the scaffolding; the foundation it built is what stayed.",
+      "scene": "ReflectionScene",
+      "interactionHint": "Pause here to let old chapters orbit back as echoes.",
+      "meta": "Goodbye, Computer Science, and forward momentum"
+    }
+  ]
+}
