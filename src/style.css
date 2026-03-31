@@ -107,10 +107,17 @@ body {
 
 .hero-brand {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  align-items: flex-start;
+  gap: 1rem;
   width: fit-content;
   margin: 0 0 0.55rem;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  padding-top: 0.25rem;
 }
 
 .brand-logo {
@@ -123,20 +130,32 @@ body {
 .kicker {
   margin: 0;
   color: var(--accent-hot);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-transform: none;
   font-family: "Space Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
 }
 
 h1 {
   margin: 0;
   font-family: "Libre Baskerville", serif;
-  line-height: 1.02;
+  font-weight: 700;
+  line-height: 1.06;
   font-size: clamp(2.3rem, 7vw, 4.7rem);
   max-width: 12ch;
   text-wrap: balance;
-  color: #0f0c0a;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+
+.hero-subhead {
+  margin: 0;
+  max-width: 44ch;
+  font-family: "Space Mono", monospace;
+  font-size: clamp(0.9rem, 1.4vw, 1.02rem);
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: var(--ink-dim);
 }
 
 .lede {
@@ -181,14 +200,14 @@ h1 {
 .part-title {
   margin: 1.35rem 0 0.2rem;
   padding: 0.28rem 0 0.08rem;
-  border-top: 2px dashed rgb(139 95 45 / 36%);
+  border-top: 1px solid var(--line);
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-size: clamp(1.7rem, 3.1vw, 2.35rem);
-  letter-spacing: 0.018em;
-  line-height: 1.1;
+  letter-spacing: 0.004em;
+  line-height: 1.14;
   color: color-mix(in srgb, var(--accent-hot) 62%, var(--ink) 38%);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .part-title .heading-lead,
@@ -199,7 +218,7 @@ h1 {
 }
 
 .part-title .heading-lead {
-  letter-spacing: 0.045em;
+  letter-spacing: 0.02em;
   margin-right: 0.22em;
   color: inherit;
 }
@@ -212,7 +231,8 @@ h1 {
 .part-title .heading-tail {
   color: inherit;
   font-size: 0.84em;
-  letter-spacing: 0.012em;
+  font-weight: 400;
+  letter-spacing: 0.004em;
   text-transform: none;
 }
 
@@ -226,18 +246,18 @@ h1 {
   margin: 0.2rem 0 0.24rem;
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
-  letter-spacing: 0.006em;
-  font-size: clamp(0.9rem, 1.4vw, 1.02rem);
-  line-height: 1.28;
+  letter-spacing: 0.002em;
+  font-size: clamp(0.95rem, 1.45vw, 1.06rem);
+  line-height: 1.32;
   color: color-mix(in srgb, var(--accent-cool) 68%, var(--ink) 32%);
-  padding: 0.12rem 0 0.12rem 0.5rem;
-  border-left: 3px solid color-mix(in srgb, var(--accent-cool) 58%, #c6b79e 42%);
-  background: linear-gradient(90deg, rgb(63 111 91 / 7%), transparent 76%);
+  padding: 0.12rem 0 0.12rem 0.6rem;
+  border-left: 2px solid color-mix(in srgb, var(--accent-cool) 58%, var(--line) 42%);
+  background: transparent;
 }
 
 .section-title .heading-lead {
-  font-variant: small-caps;
-  letter-spacing: 0.045em;
+  font-variant: normal;
+  letter-spacing: 0.02em;
   margin-right: 0.16em;
 }
 
