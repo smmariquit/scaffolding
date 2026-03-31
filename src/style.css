@@ -6,6 +6,10 @@
   --ink-dim: #4d4339;
   --accent-hot: #8b5f2d;
   --accent-cool: #3f6f5b;
+  --quote-bg: #eaf4f0;
+  --quote-border: #1f6f5e;
+  --quote-ink: #113c33;
+  --quote-mark: #8b5f2d;
   --line: rgb(40 32 23 / 18%);
 }
 
@@ -101,6 +105,18 @@ body {
   padding: 1rem 0 0.3rem;
 }
 
+.brand-mark {
+  width: fit-content;
+  margin: 0 0 0.55rem;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(4.2rem, 10vw, 6.1rem);
+  height: auto;
+  filter: drop-shadow(0 8px 12px rgb(31 21 11 / 20%));
+}
+
 .kicker {
   margin: 0;
   color: var(--accent-hot);
@@ -172,6 +188,30 @@ h1 {
   text-transform: uppercase;
 }
 
+.part-title .heading-lead,
+.part-title .heading-tail,
+.section-title .heading-lead,
+.section-title .heading-tail {
+  display: inline-block;
+}
+
+.part-title .heading-lead {
+  letter-spacing: 0.045em;
+  margin-right: 0.22em;
+}
+
+.part-title .heading-colon {
+  color: color-mix(in srgb, var(--accent-hot) 78%, #b39060 22%);
+  margin-right: 0.26em;
+}
+
+.part-title .heading-tail {
+  color: color-mix(in srgb, var(--ink) 70%, var(--accent-cool) 30%);
+  font-size: 0.84em;
+  letter-spacing: 0.012em;
+  text-transform: none;
+}
+
 .story-flow > .part-title:first-child {
   border-top: 0;
   margin-top: 0.35rem;
@@ -191,6 +231,22 @@ h1 {
   background: linear-gradient(90deg, rgb(63 111 91 / 7%), transparent 76%);
 }
 
+.section-title .heading-lead {
+  font-variant: small-caps;
+  letter-spacing: 0.045em;
+  margin-right: 0.16em;
+}
+
+.section-title .heading-colon {
+  color: color-mix(in srgb, var(--accent-cool) 70%, var(--ink) 30%);
+  margin-right: 0.18em;
+}
+
+.section-title .heading-tail {
+  font-style: italic;
+  color: color-mix(in srgb, var(--ink) 74%, var(--accent-cool) 26%);
+}
+
 .story-paragraph {
   margin: 0.38rem 0;
   min-height: auto;
@@ -206,14 +262,27 @@ h1 {
 
 .story-quote {
   margin: 0.55rem 0 1.1rem;
-  padding: 0.5rem 0.95rem;
-  border-left: 4px solid color-mix(in srgb, var(--accent-hot) 66%, #d9c6a8 34%);
-  background: linear-gradient(90deg, rgb(139 95 45 / 10%), transparent 82%);
+  padding: 0.62rem 1rem;
+  border-left: 5px solid var(--quote-border);
+  border-radius: 0 0.35rem 0.35rem 0;
+  background:
+    linear-gradient(90deg, rgb(31 111 94 / 18%), rgb(31 111 94 / 0%) 86%),
+    var(--quote-bg);
+  box-shadow: inset 0 0 0 1px rgb(17 60 51 / 7%);
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: clamp(1.03rem, 1.48vw, 1.2rem);
   line-height: 1.5;
-  color: color-mix(in srgb, var(--ink) 88%, var(--accent-hot) 12%);
+  color: var(--quote-ink);
+}
+
+.story-quote::before {
+  content: "\201C";
+  color: var(--quote-mark);
+  font-size: 1.28em;
+  line-height: 0;
+  margin-right: 0.15em;
+  vertical-align: -0.12em;
 }
 
 .story-figure {

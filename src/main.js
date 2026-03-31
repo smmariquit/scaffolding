@@ -23,6 +23,40 @@ function normalizeInlineMarkdown(text) {
     .trim();
 }
 
+function splitHeadingByColon(text) {
+  const separatorIndex = text.indexOf(":");
+  if (separatorIndex === -1) {
+    return { lead: text, tail: "" };
+  }
+
+  const lead = text.slice(0, separatorIndex).trim();
+  const tail = text.slice(separatorIndex + 1).trim();
+  return { lead, tail };
+}
+
+function applyHeadingParts(element, text) {
+  const { lead, tail } = splitHeadingByColon(text);
+  if (!tail) {
+    element.textContent = lead;
+    return;
+  }
+
+  const leadSpan = document.createElement("span");
+  leadSpan.className = "heading-lead";
+  leadSpan.textContent = lead;
+
+  const colonSpan = document.createElement("span");
+  colonSpan.className = "heading-colon";
+  colonSpan.setAttribute("aria-hidden", "true");
+  colonSpan.textContent = ":";
+
+  const tailSpan = document.createElement("span");
+  tailSpan.className = "heading-tail";
+  tailSpan.textContent = tail;
+
+  element.replaceChildren(leadSpan, colonSpan, tailSpan);
+}
+
 function parseStoryMarkdown(rawText) {
   const lines = rawText.replace(/\u200b/g, "").replace(/\r/g, "").split("\n");
   const nodes = [];
@@ -89,7 +123,10 @@ function parseStoryMarkdown(rawText) {
     }
 
     const maybeQuote = normalizeInlineMarkdown(line);
-    if (line.startsWith("*") && line.endsWith("*") && maybeQuote.startsWith("...")) {
+    const isEmphasizedLeadQuote = line.startsWith("*") && line.endsWith("*") && maybeQuote.startsWith("...");
+    const isWrappedInQuotes = /^["“].+["”]$/.test(maybeQuote);
+
+    if (isEmphasizedLeadQuote || isWrappedInQuotes) {
       flushParagraph();
       nodes.push({ type: "quote", text: maybeQuote, partSlug, sectionSlug });
       continue;
@@ -159,7 +196,7 @@ function renderStory(nodes) {
 
       const heading = document.createElement("h2");
       heading.className = "part-title";
-      heading.textContent = node.text;
+      applyHeadingParts(heading, node.text);
       storyFlow.append(heading);
       return;
     }
@@ -167,7 +204,7 @@ function renderStory(nodes) {
     if (node.type === "h3") {
       const subheading = document.createElement("h3");
       subheading.className = "section-title";
-      subheading.textContent = node.text;
+      applyHeadingParts(subheading, node.text);
       storyFlow.append(subheading);
       return;
     }
