@@ -153,7 +153,7 @@ h1 {
   max-width: 44ch;
   font-family: "Space Mono", monospace;
   font-size: clamp(0.9rem, 1.4vw, 1.02rem);
-  line-height: 1.45;
+  line-height: 1.82;
   letter-spacing: 0.01em;
   color: var(--ink-dim);
 }
