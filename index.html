@@ -3,30 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Memoir</title>
+    <title>Scaffolding: How Minecraft built the person I became</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500..800&family=IBM+Plex+Sans:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <canvas id="gl-canvas" aria-hidden="true"></canvas>
-    <div class="crt-shell" aria-hidden="true"></div>
-    <div class="crt-scan" aria-hidden="true"></div>
-    <div class="crt-vignette" aria-hidden="true"></div>
+    <div class="experience-layout">
+      <section class="narrative-pane">
+        <header class="hero">
+          <h1>Scaffolding</h1>
+          <p class="lede">How Minecraft built me into the person I became.</p>
+        </header>
 
-    <header class="hero">
-      <p class="kicker">HUM 3</p>
-      <h1><span>Built</span> From Static</h1>
-      <p class="lede">A story about building through unstable tools, tight limits, and long nights.</p>
-      <button id="motion-toggle" type="button" aria-pressed="false">Reduce Motion: Off</button>
-    </header>
+        <main id="story" aria-live="polite"></main>
+      </section>
 
-    <nav id="progress-nav" aria-label="Story Progress"></nav>
-
-    <main id="story" aria-live="polite"></main>
+      <aside class="visual-pane" aria-label="Animation Stage">
+        <canvas id="gl-canvas" aria-hidden="true"></canvas>
+        <div class="crt-shell" aria-hidden="true"></div>
+        <div class="crt-scan" aria-hidden="true"></div>
+        <div class="crt-vignette" aria-hidden="true"></div>
+      </aside>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

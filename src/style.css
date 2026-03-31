@@ -1,14 +1,12 @@
 :root {
-  --bg-deep: #050706;
-  --bg-mid: #151d18;
-  --ink: #f2f0dc;
-  --ink-dim: #b6c2a8;
-  --accent-hot: #ffb35b;
-  --accent-cool: #9bfbc2;
-  --accent-metal: #d3b37a;
-  --panel: rgb(9 14 11 / 78%);
-  --line: rgb(196 241 202 / 24%);
-  --max-width: 78rem;
+  --bg-deep: #181512;
+  --bg-mid: #2c2721;
+  --paper: #f5f1e8;
+  --ink: #171412;
+  --ink-dim: #4d4339;
+  --accent-hot: #8b5f2d;
+  --accent-cool: #3f6f5b;
+  --line: rgb(40 32 23 / 18%);
 }
 
 * {
@@ -20,61 +18,58 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  color: var(--ink);
-  background: radial-gradient(circle at 15% 12%, rgb(255 179 91 / 20%) 0%, transparent 34%),
-    radial-gradient(circle at 85% 82%, rgb(137 248 182 / 18%) 0%, transparent 42%),
-    linear-gradient(168deg, #252014 0%, var(--bg-mid) 35%, var(--bg-deep) 74%, #020303 100%);
-  font-family: "IBM Plex Sans", sans-serif;
+  color: #e8dfcf;
+  background: linear-gradient(170deg, #17130d 0%, var(--bg-mid) 44%, var(--bg-deep) 100%);
+  font-family: Georgia, "Times New Roman", serif;
   overflow-x: clip;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image: url("/retro-tv-mockup(1).png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.16;
-  filter: saturate(0.72) contrast(1.08) brightness(0.62);
-  animation: tvDrift 26s linear infinite alternate;
+.experience-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(20rem, 46vw) minmax(20rem, 54vw);
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    linear-gradient(90deg, rgb(255 190 110 / 5%), transparent 20%, transparent 80%, rgb(157 255 202 / 6%)),
-    radial-gradient(circle at 50% -24%, rgb(255 168 82 / 12%), transparent 56%),
-    radial-gradient(circle at 50% 122%, rgb(131 255 185 / 12%), transparent 56%);
-  mix-blend-mode: plus-lighter;
-  animation: phosphorPulse 4.6s ease-in-out infinite;
+.narrative-pane {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  border-right: 1px solid rgb(35 30 25 / 16%);
 }
 
+.visual-pane {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #020303;
+}
+
+#gl-canvas,
 .crt-shell,
 .crt-scan,
 .crt-vignette {
-  position: fixed;
+  position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
 }
 
-.crt-shell {
+#gl-canvas {
   z-index: 0;
+  filter: contrast(1.12) saturate(1.05) brightness(0.95);
+}
+
+.crt-shell {
+  z-index: 1;
   background:
-    radial-gradient(circle at 50% 48%, transparent 52%, rgb(0 0 0 / 34%) 100%),
-    linear-gradient(176deg, rgb(255 231 174 / 6%), transparent 22%);
-  opacity: 0.62;
+    radial-gradient(circle at 50% 48%, transparent 53%, rgb(0 0 0 / 42%) 100%),
+    linear-gradient(176deg, rgb(255 231 174 / 5%), transparent 26%);
 }
 
 .crt-scan {
-  z-index: 0;
+  z-index: 2;
   background:
     repeating-linear-gradient(
       0deg,
@@ -83,36 +78,27 @@ body::after {
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(0deg, transparent 0%, rgb(163 255 205 / 9%) 49%, transparent 52%, transparent 100%);
+    linear-gradient(0deg, transparent 0%, rgb(163 255 205 / 8%) 49%, transparent 52%, transparent 100%);
   mix-blend-mode: soft-light;
-  opacity: 0.58;
+  opacity: 0.62;
   animation: scanRoll 7.5s linear infinite, crtFlicker 0.14s steps(2, end) infinite;
 }
 
 .crt-vignette {
-  z-index: 0;
-  background: radial-gradient(circle at 50% 50%, transparent 40%, rgb(0 0 0 / 52%) 100%);
-  opacity: 0.58;
-}
-
-#gl-canvas {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  filter: contrast(1.12) saturate(1.06) brightness(0.95);
+  z-index: 3;
+  background: radial-gradient(circle at 50% 50%, transparent 42%, rgb(0 0 0 / 62%) 100%);
 }
 
 .hero,
-#story,
-#progress-nav {
+#story {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .hero {
-  max-width: min(92vw, var(--max-width));
-  margin: 7vh auto 0;
-  padding: 1rem 0 2rem;
+  margin: 4vh auto 0;
+  width: min(90%, 42rem);
+  padding: 1rem 0 0.3rem;
 }
 
 .kicker {
@@ -121,191 +107,183 @@ body::after {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-family: "Space Mono", monospace;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
 }
 
 h1 {
-  margin: 0.45rem 0 0.8rem;
-  font-family: "Bricolage Grotesque", sans-serif;
-  line-height: 0.9;
-  font-size: clamp(2.3rem, 10vw, 6rem);
+  margin: 0.5rem 0 0.8rem;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.02;
+  font-size: clamp(2.3rem, 7vw, 4.7rem);
   max-width: 12ch;
   text-wrap: balance;
-}
-
-h1 span {
-  display: block;
-  color: var(--accent-cool);
-  text-shadow: -2px 0 rgb(255 179 91 / 42%);
+  color: #0f0c0a;
 }
 
 .lede {
   max-width: 52ch;
   margin: 0;
   color: var(--ink-dim);
-  font-size: clamp(0.97rem, 1.8vw, 1.08rem);
+  font-size: clamp(0.95rem, 1.6vw, 1.04rem);
 }
 
 #motion-toggle {
-  margin-top: 1rem;
-  border: 1px solid var(--line);
-  background: rgb(9 16 12 / 68%);
-  color: var(--ink);
+  margin-top: 0.85rem;
+  border: 1px solid rgb(196 241 202 / 20%);
+  background: rgb(9 16 12 / 28%);
+  color: color-mix(in srgb, var(--ink) 88%, #000 12%);
   border-radius: 999px;
-  padding: 0.45rem 0.9rem;
-  font: inherit;
+  padding: 0.34rem 0.74rem;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  opacity: 0.86;
+  transition: border-color 0.25s ease, background 0.25s ease, opacity 0.25s ease;
 }
 
 #motion-toggle:hover {
-  border-color: rgb(255 179 91 / 58%);
-  box-shadow: 0 0 0 1px rgb(255 179 91 / 14%), 0 0 18px rgb(255 179 91 / 18%);
-  transform: translateY(-1px);
-}
-
-#progress-nav {
-  position: sticky;
-  top: 0.8rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: min(92vw, var(--max-width));
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  padding: 0.2rem 0;
-}
-
-.progress-pill {
-  border: 1px solid var(--line);
-  background: rgb(8 14 10 / 72%);
-  color: var(--ink-dim);
-  border-radius: 999px;
-  padding: 0.35rem 0.7rem;
-  font-family: "Space Mono", monospace;
-  font-size: 0.72rem;
-}
-
-.progress-pill.is-active {
-  color: var(--ink);
-  border-color: rgb(255 179 91 / 72%);
-  box-shadow: 0 0 0 1px rgb(255 179 91 / 18%), 0 0 16px rgb(255 179 91 / 22%);
+  border-color: rgb(196 241 202 / 32%);
+  background: rgb(9 16 12 / 36%);
+  opacity: 1;
 }
 
 #story {
-  width: min(92vw, var(--max-width));
-  margin: 1rem auto 6rem;
+  margin: 0 auto;
+  width: min(90%, 42rem);
+  padding: 0 0 12vh;
+  background: var(--paper);
+}
+
+.story-flow {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 0;
 }
 
-.chapter {
-  min-height: 92svh;
-  padding: clamp(1rem, 4vw, 2.2rem);
-  border-radius: 1.2rem;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  backdrop-filter: blur(10px) saturate(1.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 0.75rem;
-  position: relative;
-  overflow: hidden;
-  animation: chapterRise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-
-.chapter:nth-child(2n) {
-  animation-delay: 0.08s;
-}
-
-.chapter:nth-child(3n) {
-  animation-delay: 0.14s;
-}
-
-.chapter::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(146deg, rgb(255 177 95 / 12%), transparent 34%, rgb(150 255 197 / 11%) 100%);
-  mix-blend-mode: screen;
-  opacity: 0.42;
-}
-
-.chapter::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgb(247 249 210 / 7%) 0%, transparent 26%);
-  opacity: 0.38;
-}
-
-.chapter h2 {
-  margin: 0;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: clamp(1.35rem, 4.2vw, 2.4rem);
-}
-
-.chapter p {
-  margin: 0;
-  max-width: 55ch;
-}
-
-.chapter .meta {
-  color: var(--accent-metal);
-  font-family: "Space Mono", monospace;
-  font-size: 0.74rem;
+.part-title {
+  margin: 1.35rem 0 0.2rem;
+  padding: 0.28rem 0 0.08rem;
+  border-top: 2px dashed rgb(139 95 45 / 36%);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.1vw, 2.35rem);
+  letter-spacing: 0.018em;
+  line-height: 1.1;
+  color: color-mix(in srgb, var(--accent-hot) 62%, var(--ink) 38%);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
-.chapter blockquote {
-  margin: 0.35rem 0 0;
-  border-left: 2px solid rgb(0 209 199 / 45%);
-  padding-left: 0.7rem;
-  color: var(--ink);
+.story-flow > .part-title:first-child {
+  border-top: 0;
+  margin-top: 0.35rem;
+  padding-top: 0;
+}
+
+.section-title {
+  margin: 0.2rem 0 0.24rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  letter-spacing: 0.006em;
+  font-size: clamp(0.9rem, 1.4vw, 1.02rem);
+  line-height: 1.28;
+  color: color-mix(in srgb, var(--accent-cool) 68%, var(--ink) 32%);
+  padding: 0.12rem 0 0.12rem 0.5rem;
+  border-left: 3px solid color-mix(in srgb, var(--accent-cool) 58%, #c6b79e 42%);
+  background: linear-gradient(90deg, rgb(63 111 91 / 7%), transparent 76%);
+}
+
+.story-paragraph {
+  margin: 0.38rem 0;
+  min-height: auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 1.34vw, 1.09rem);
+  line-height: 1.64;
+  color: color-mix(in srgb, var(--ink) 96%, #000 4%);
+}
+
+.story-paragraph:first-of-type {
+  margin-top: 0.3rem;
+}
+
+.story-quote {
+  margin: 0.55rem 0 1.1rem;
+  padding: 0.5rem 0.95rem;
+  border-left: 4px solid color-mix(in srgb, var(--accent-hot) 66%, #d9c6a8 34%);
+  background: linear-gradient(90deg, rgb(139 95 45 / 10%), transparent 82%);
+  font-family: "Libre Baskerville", serif;
   font-style: italic;
-  max-width: 48ch;
+  font-size: clamp(1.03rem, 1.48vw, 1.2rem);
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--ink) 88%, var(--accent-hot) 12%);
 }
 
-.chapter .hint {
-  font-family: "Space Mono", monospace;
-  color: var(--accent-hot);
-  font-size: 0.77rem;
+.story-figure {
+  margin: 1rem 0 1.35rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(21 17 14 / 12%);
+  border-radius: 0.4rem;
+  background: #ebe5d8;
 }
 
-#intro {
-  border-color: rgb(0 209 199 / 38%);
+.story-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: min(68vh, 36rem);
+  object-fit: contain;
+  object-position: center;
 }
 
-#conflict {
-  border-color: rgb(255 106 61 / 44%);
-}
+@media (max-width: 980px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
 
-#low-point {
-  border-color: rgb(153 180 194 / 45%);
-}
+  .visual-pane {
+    order: 0;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 0;
+    opacity: 0.42;
+    z-index: 0;
+    pointer-events: none;
+    border-bottom: 0;
+    filter: saturate(0.9) contrast(0.95);
+  }
 
-#recovery {
-  border-color: rgb(0 209 199 / 45%);
-}
+  .narrative-pane {
+    border-right: 0;
+    position: relative;
+    z-index: 2;
+    background: rgb(245 241 232 / 88%);
+    backdrop-filter: blur(1px);
+  }
 
-#reflection {
-  border-color: rgb(244 235 213 / 35%);
-}
+  #progress-nav {
+    top: 0;
+  }
 
-@media (min-width: 820px) {
-  .chapter {
-    min-height: 75vh;
+  .hero,
+  #story {
+    background: transparent;
+  }
+
+  .story-paragraph {
+    min-height: auto;
+    margin: 0.85rem 0;
+  }
+
+  .story-image {
+    max-height: min(58vh, 26rem);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body::before,
-  body::after,
   .crt-scan {
     animation: none;
   }
@@ -329,35 +307,5 @@ h1 span {
   }
   100% {
     opacity: 0.45;
-  }
-}
-
-@keyframes phosphorPulse {
-  0%,
-  100% {
-    opacity: 0.82;
-  }
-  50% {
-    opacity: 0.56;
-  }
-}
-
-@keyframes chapterRise {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 16px, 0) scale(0.985);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-}
-
-@keyframes tvDrift {
-  from {
-    transform: scale(1.04) translate3d(-1.4%, -0.8%, 0);
-  }
-  to {
-    transform: scale(1.08) translate3d(1.2%, 1%, 0);
   }
 }
