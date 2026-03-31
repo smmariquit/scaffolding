@@ -189,12 +189,14 @@ function renderStory(nodes) {
   storyFlow.className = "story-flow";
 
   let currentPart = null;
+  let partCounter = 0;
   let beatCounter = 0;
   beatNodes = [];
   timelineBeats = [];
 
   nodes.forEach((node) => {
     if (node.type === "h2") {
+      partCounter += 1;
       currentPart = {
         slug: node.partSlug,
         title: node.text,
@@ -203,6 +205,7 @@ function renderStory(nodes) {
 
       const heading = document.createElement("h2");
       heading.className = "part-title";
+      heading.dataset.partNumber = `${String(partCounter).padStart(2, "0")}.`;
       applyHeadingParts(heading, node.text);
       storyFlow.append(heading);
       return;
