@@ -105,14 +105,17 @@ body {
   padding: 1rem 0 0.3rem;
 }
 
-.brand-mark {
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   width: fit-content;
   margin: 0 0 0.55rem;
 }
 
 .brand-logo {
   display: block;
-  width: clamp(4.2rem, 10vw, 6.1rem);
+  width: clamp(3.4rem, 7.4vw, 4.9rem);
   height: auto;
   filter: drop-shadow(0 8px 12px rgb(31 21 11 / 20%));
 }
@@ -127,7 +130,7 @@ body {
 }
 
 h1 {
-  margin: 0.5rem 0 0.8rem;
+  margin: 0;
   font-family: "Libre Baskerville", serif;
   line-height: 1.02;
   font-size: clamp(2.3rem, 7vw, 4.7rem);
@@ -198,15 +201,16 @@ h1 {
 .part-title .heading-lead {
   letter-spacing: 0.045em;
   margin-right: 0.22em;
+  color: inherit;
 }
 
 .part-title .heading-colon {
-  color: color-mix(in srgb, var(--accent-hot) 78%, #b39060 22%);
+  color: inherit;
   margin-right: 0.26em;
 }
 
 .part-title .heading-tail {
-  color: color-mix(in srgb, var(--ink) 70%, var(--accent-cool) 30%);
+  color: inherit;
   font-size: 0.84em;
   letter-spacing: 0.012em;
   text-transform: none;
@@ -238,13 +242,13 @@ h1 {
 }
 
 .section-title .heading-colon {
-  color: color-mix(in srgb, var(--accent-cool) 70%, var(--ink) 30%);
+  color: inherit;
   margin-right: 0.18em;
 }
 
 .section-title .heading-tail {
   font-style: italic;
-  color: color-mix(in srgb, var(--ink) 74%, var(--accent-cool) 26%);
+  color: inherit;
 }
 
 .story-paragraph {
