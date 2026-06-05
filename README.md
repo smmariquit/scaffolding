@@ -14,3 +14,12 @@ Comparison across three prototype branches for the CRT animation engine.
 
 - Runtime benchmarks (FPS, frame time, memory, and built bundle output sizes) were not captured in this shell because Node/npm execution was unavailable.
 - This table reflects static repository metrics extracted from each branch tip.
+
+## 📊 Current State of the Code
+- **Tech Stack:** Node.js/NPM
+- **Repository Size:** 53 tracked files
+- **Latest Update:** `af6340e chore: add stale issue and PR validators`
+
+
+---
+*☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
