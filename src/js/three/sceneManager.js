@@ -1,3 +1,5 @@
+// src/js/three/sceneManager.js
+
 import * as THREE from 'three';
 
 // Block colors  

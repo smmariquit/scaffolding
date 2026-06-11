@@ -1,3 +1,5 @@
+// src/js/three/scenes/RecoveryScene.js
+
 import * as THREE from "three";
 
 export function createRecoveryScene() {

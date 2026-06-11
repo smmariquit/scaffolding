@@ -1,3 +1,5 @@
+// src/js/three/scenes/CRTScene.js
+
 import * as THREE from "three";
 
 function createNoiseCanvas(width, height) {

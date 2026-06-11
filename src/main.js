@@ -1,3 +1,5 @@
+// src/main.js
+
 import "./style.css";
 import Lenis from "lenis";
 import { createSceneManager } from "./js/three/sceneManager.js";

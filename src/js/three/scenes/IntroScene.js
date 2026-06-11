@@ -1,3 +1,5 @@
+// src/js/three/scenes/IntroScene.js
+
 import * as THREE from "three";
 
 export function createIntroScene() {

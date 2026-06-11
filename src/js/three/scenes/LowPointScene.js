@@ -1,3 +1,5 @@
+// src/js/three/scenes/LowPointScene.js
+
 import * as THREE from "three";
 
 export function createLowPointScene() {

@@ -1,3 +1,5 @@
+// src/js/three/scenes/ConflictScene.js
+
 import * as THREE from "three";
 
 export function createConflictScene() {
