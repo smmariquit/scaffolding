@@ -82,7 +82,7 @@ I took on the challenge to move from creating a game to building a community. Pe
 
 ![][image7]
 
-As the manager of an online community more than the developer of a unique game, I had the responsibility to foster a safe space. This meant that I always had to be present on the server. During online classes, I would always have my server in the background.
+As the manager of an online community more than the developer of a unique game, I had the responsibility to support a safe space. This meant that I always had to be present on the server. During online classes, I would always have my server in the background.
 
 Of course, managing an online community isn’t easy. People naturally tend to conflict for some reason or another. While this was, in hindsight, emotional labor, it gave me the insight I needed to keep the server on for almost seven years.
 
@@ -134,7 +134,7 @@ I also went into UP with unique soft skills that you couldn’t just get anywher
 
 ### *Sharing my Lessons*
 
-As I transitioned into a professional career in software engineering, I realized that I still have a deep passion for teaching. I now get invited to speak at events to give insights into the field, and I always find myself coming back to my Minecraft career. People are often surprised by what a "block game" can teach a professional engineer, but I’m always grateful to share the insights I got to others.  
+As I transitioned into a professional career in software engineering, I realized that I still have a deep passion for teaching. I now get invited to speak at events to give insights into the field, and I always find myself coming back to my Minecraft career. People are often surprised by what a "block game" can teach a professional engineer, but I’m always grateful to share the insights I got to others. 
 ![][image14]
 
 ### *Forward*
