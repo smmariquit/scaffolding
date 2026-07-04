@@ -20,6 +20,5 @@ Comparison across three prototype branches for the CRT animation engine.
 - **Repository Size:** 53 tracked files
 - **Latest Update:** `af6340e chore: add stale issue and PR validators`
 
-
 ---
 *☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
